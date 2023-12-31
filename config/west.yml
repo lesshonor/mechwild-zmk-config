@@ -1,0 +1,23 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: mechwild
+      url-base: https://github.com/mechwild
+    - name: lesshonor
+      url-base: https://github.com/lesshonor
+    # Additional modules containing boards/shields/custom code can be listed here as well.
+    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+  projects:
+    - name: mechwild-zmk-keyboards
+      #remote: mechwild
+      remote: lesshonor  # Eventually, you'll want to swap this out with mechwild.
+      revision: main
+      clone-depth: 1
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      clone-depth: 1
+      import: app/west.yml
+  self:
+    path: config
