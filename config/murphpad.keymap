@@ -18,16 +18,16 @@
  * 2. Change the &sensors node to only include the one you used.
 */
 
-&encoder_1 {
+&left_middle_encoder {
     status = "okay";
 };
 
-&encoder_2 {
+&top_right_encoder {
     status = "okay";
 };
 
 &sensors {
-    sensors = <&encoder_1 &encoder_2>;
+    sensors = <&left_middle_encoder &top_right_encoder>;
 };
 
 / {
@@ -55,7 +55,7 @@
         };
     };
 
-    keymap0: keymap {
+    keymap {
         compatible = "zmk,keymap";
 
         default_layer {
