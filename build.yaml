@@ -37,6 +37,8 @@ include:
     shield: settings_reset
   - board: pillbug
     shield: settings_reset
+  - board: blackpill_f401cc
+    shield: settings_reset
   - board: blackpill_f401ce
     shield: settings_reset
   - board: blackpill_f411ce
