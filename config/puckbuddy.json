@@ -1,0 +1,66 @@
+{
+  "layouts": {
+    "default_transform": {
+      "name": "No OLED",
+      "layout": [
+        { "row": 0, "col": 0, "x": 0, "y": 0 },
+        { "row": 0, "col": 1, "x": 1, "y": 0 },
+        { "row": 0, "col": 2, "x": 2, "y": 0 },
+        { "row": 0, "col": 3, "x": 3, "y": 0 },
+        { "row": 0, "col": 4, "x": 4, "y": 0 },
+      
+        { "row": 1, "col": 0, "x": 0, "y": 1 },
+        { "row": 1, "col": 4, "x": 4, "y": 1 },
+      
+        { "row": 2, "col": 0, "x": 0, "y": 2 },
+        { "row": 2, "col": 4, "x": 4, "y": 2 },
+      
+        { "row": 3, "col": 0, "x": 0, "y": 3 },
+        { "row": 3, "col": 4, "x": 4, "y": 3 },
+      
+        { "row": 4, "col": 0, "x": 0.5, "y": 4 },
+        { "row": 4, "col": 1, "x": 1.5, "y": 4 },
+        { "row": 4, "col": 2, "x": 2.5, "y": 4 },
+        { "row": 4, "col": 3, "x": 3.5, "y": 4 }
+      ]
+    },
+    "oled_transform": {
+      "name": "OLED",
+      "layout": [
+        { "row": 0, "col": 0, "x": 0, "y": 0 },
+        { "row": 0, "col": 3, "x": 3, "y": 0 },
+        { "row": 0, "col": 4, "x": 4, "y": 0 },
+      
+        { "row": 1, "col": 0, "x": 0, "y": 1 },
+        { "row": 1, "col": 4, "x": 4, "y": 1 },
+      
+        { "row": 2, "col": 0, "x": 0, "y": 2 },
+        { "row": 2, "col": 4, "x": 4, "y": 2 },
+      
+        { "row": 3, "col": 0, "x": 0, "y": 3 },
+        { "row": 3, "col": 4, "x": 4, "y": 3 },
+      
+        { "row": 4, "col": 0, "x": 0.5, "y": 4 },
+        { "row": 4, "col": 1, "x": 1.5, "y": 4 },
+        { "row": 4, "col": 2, "x": 2.5, "y": 4 },
+        { "row": 4, "col": 3, "x": 3.5, "y": 4 }
+      ]
+    }
+  },
+  "sensors": [
+    {
+      "ref": "left_encoder",
+      "name": "left_encoder",
+      "identifier": "encoder_0",
+      "compatible": "alps,ec11",
+      "label": "Left Encoder"
+    },
+    {
+      "ref": "right_encoder",
+      "name": "right_encoder",
+      "identifier": "encoder_1",
+      "compatible": "alps,ec11",
+      "label": "Right Encoder"
+    }
+  ]
+}

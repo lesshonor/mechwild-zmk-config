@@ -28,6 +28,10 @@ include:
 #  - board: pillbug
 #    shield: obe
 #  - board: pillbug
+#    shield: puckbuddy
+#  - board: pillbug
+#    shield: sugarglider
+#  - board: pillbug
 #    shield: waka60
   - board: nice_nano
     shield: settings_reset
