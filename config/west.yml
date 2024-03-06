@@ -12,12 +12,10 @@ manifest:
     - name: mechwild-zmk-keyboards
       #remote: mechwild
       remote: lesshonor  # Eventually, you'll want to swap this out with mechwild.
-      revision: main
-      clone-depth: 1
+      revision: 4c5c63842e4979690391f3d8008786c31c5cbe6b
     - name: zmk
       remote: zmkfirmware
-      revision: main
-      clone-depth: 1
+      revision: b8846cf6355c5d7ae52a191988054b532a264f0c
       import: app/west.yml
   self:
     path: config
