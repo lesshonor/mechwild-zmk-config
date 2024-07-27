@@ -1,0 +1,3 @@
+---
+board: [nice_nano_v2, nrfmicro_11, nrfmicro_13, adafruit_kb2040, sparkfun_pro_micro_rp2040, proton_c]
+shield: [murphpad, bde_rev2, mokulua_left, mokulua_right]

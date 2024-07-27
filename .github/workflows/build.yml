@@ -2,4 +2,11 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
+    strategy:
+      fail-fast: false
+      matrix:
+        file-prefix: [pro_micro, blackpill, etc]
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      build_matrix_path: ${{ matrix.file-prefix }}.yaml
+      archive_name: ${{ matrix.file-prefix }}

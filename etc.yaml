@@ -1,0 +1,14 @@
+# This file determines which shields will be built for which boards.
+# By default, only the settings_reset firmware will be built for boards that have been tested with MechWild shields. Some others have been added commented out, so you can see the format.
+# Remove the boards and/or shields you don't need, and add/uncomment the ones you do need.
+
+# ADVANCED:
+# You can use the `cmake-args` property to pass flags to the build command, and `artifact-name` to assign a name to
+# distinguish build outputs from each other:
+#  - board: nice_nano_v2
+#    shield: corne_left
+#    cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
+#    artifact-name: corne_left_with_logging
+---
+include:
+  - board: s40nc
