@@ -6,7 +6,7 @@ jobs:
       fail-fast: false
       matrix:
         file-prefix: [pro_micro, blackpill, etc]
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: lesshonor/zmk/.github/workflows/build-user-config.yml@core/move-to-zephyr-4-1
     with:
       build_matrix_path: ${{ matrix.file-prefix }}.yaml
       archive_name: ${{ matrix.file-prefix }}
