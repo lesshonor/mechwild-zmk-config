@@ -16,36 +16,5 @@
 #    cmake-args: -DCONFIG_ZMK_STUDIO=y
 #    artifact-name: murphpad_studio
 ---
-include:
-#  - board: pillbug
-#    shield: bb40
-#  - board: pillbug
-#    shield: bb65
-#  - board: pillbug
-#    shield: bbpad
-#  - board: nice_nano_v2
-#    shield: bde_rev2
-#  - board: nice_nano_v2
-#    shield: mokulua_left
-#  - board: nice_nano_v2
-#    shield: mokulua_right
-#  - board: nice_nano_v2
-#    shield: murphpad
-#  - board: pillbug
-#    shield: obe
-#  - board: pillbug
-#    shield: waka60
-  - board: nice_nano
-    shield: settings_reset
-  - board: nice_nano_v2
-    shield: settings_reset
-  - board: pillbug@0.1
-    shield: settings_reset
-  - board: pillbug
-    shield: settings_reset
-  - board: blackpill_f401cc
-    shield: settings_reset
-  - board: blackpill_f401ce
-    shield: settings_reset
-  - board: blackpill_f411ce
-    shield: settings_reset
+board: [pillbug@0.1, pillbug@1.0, blackpill_f401cc, blackpill_f401ce, blackpill_f411ce]
+shield: [puckbuddy, sugarglider, settings_reset]
